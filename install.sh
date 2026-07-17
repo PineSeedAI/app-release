@@ -58,7 +58,7 @@ _latest() {
   trap '[ -n "${tmp:-}" ] && rm -f "$tmp"' RETURN
   _stream "$api" "$tmp"
   out="$(grep '"tag_name"' "$tmp" \
-    | grep "\"${prefix}/v" \
+    | grep "\"${prefix}-v" \
     | head -1 \
     | sed 's/.*"tag_name": *"\([^"]*\)".*/\1/')"
   [ -n "$out" ] || _die "no release found for prefix '${prefix}' in ${RELEASE_REPO}"
