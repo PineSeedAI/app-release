@@ -108,7 +108,7 @@ _default_gui_dir() {
     *) _die "unsupported OS: ${raw_os}" ;;
   esac
 }
-_is_gui() { case "$PREFIX" in login|desktop) return 0;; *) return 1;; esac; }
+_is_gui() { case "$PREFIX" in desktop) return 0;; *) return 1;; esac; }
 
 # ── Resolve install dir ───────────────────────────────────────────────────────
 INSTALL_DIR="${FLAG_INSTALL_DIR:-${INSTALL_DIR:-}}"
