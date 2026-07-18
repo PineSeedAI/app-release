@@ -1,7 +1,7 @@
 <center>
     <img src="https://avatars.githubusercontent.com/u/135665908?v=4" width="50px" height="50px" />
-    <h1>&nbsp; </h1>
-    <h1>PineSeed public app releases</h1>
+    <p>&nbsp; </p>
+    <p style="font-size: 3rem">PineSeed public app releases</p>
 </center>
 
 
