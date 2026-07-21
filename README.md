@@ -13,10 +13,11 @@
 The PineSeed ACP agent
 
 ```sh
-pineseed-acp-agent login -i                    → login flow, browser OAuth
-pineseed-acp-agent --config                    → prints ACP client config JSON
-pineseed-acp-agent --account alice             → ACP agent invocation
+pineseed-acp-agent login -i --workspace-id <id>   → login flow, browser OAuth
+pineseed-acp-agent --config                       → prints ACP client config JSON
+pineseed-acp-agent --account alice                → ACP agent invocation
 ```
+<!-- e.g. w.s. i.d. 01940000-0001-7011-8000-000000000001 -->
 
 ## Install by app name:
 
