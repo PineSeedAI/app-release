@@ -13,7 +13,9 @@ The PineSeed ACP agent
 
 On first usage, run this to print the json config for ACP clients:
 ```sh
-pineseed-acp-agent --config
+pineseed-acp-agent login -i                    → login flow, browser OAuth
+pineseed-acp-agent --config                    → prints ACP client config JSON
+pineseed-acp-agent --account alice             → ACP agent invocation
 ```
 
 ## Install by app name:
