@@ -1,8 +1,6 @@
-<center>
-    <img src="https://avatars.githubusercontent.com/u/135665908?v=4" width="50px" height="50px" />
-    <bold>&nbsp; </bold>
-    <bold style="font-size: 3rem">PineSeed public app releases</bold>
-</center>
+# PineSeed public app release repo
+
+<center><img src="https://avatars.githubusercontent.com/u/135665908" width="50px" height="50px" /></center>
 
 
 > [!WARNING]
