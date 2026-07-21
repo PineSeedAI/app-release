@@ -1,5 +1,6 @@
 <div align="center">
-    <h1>PineSeed public app releases<h1>
+    <h1>Pine Seed<h1>
+    <h3>public app releases<h3>
     <img src="https://avatars.githubusercontent.com/u/135665908" width="50px" />
 </div>
 
