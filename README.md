@@ -1,7 +1,8 @@
 <div align="center">
-    <h1>Pine Seed<h1>
-    <h3>public app releases<h3>
     <img src="https://avatars.githubusercontent.com/u/135665908" width="50px" />
+    <h1>Pine Seed</h1>
+    <h3>public app releases</h3>
+    <em>yaya</em>
 </div>
 
 
