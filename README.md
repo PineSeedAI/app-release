@@ -1,7 +1,7 @@
 <center>
     <img src="https://avatars.githubusercontent.com/u/135665908?v=4" width="50px" height="50px" />
-    <p>&nbsp; </p>
-    <p style="font-size: 3rem">PineSeed public app releases</p>
+    <bold>&nbsp; </bold>
+    <bold style="font-size: 3rem">PineSeed public app releases</bold>
 </center>
 
 
@@ -18,23 +18,16 @@ On first usage, run this to print the json config for ACP clients:
 pineseed-acp-agent --config
 ```
 
-### Name: `login`
-The PineSeed login app
-
-Once installed, open `pineseed-login` as a desktop app.
-
-<!--### Apps: `agency`, `acp`, `edge`, `hypus`, `login`, `desktop`-->
-
-## Installation by <app name>:
+## Install by app name:
 
 Install latest:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/PineSeedAI/app-release/refs/heads/main/install.sh | bash -s -- <app>
+curl -fsSL https://raw.githubusercontent.com/PineSeedAI/app-release/refs/heads/main/install.sh | bash -s -- <app name>
 ```
 
 To install a specific version to a custom dir, add:
 ```sh
- --version <app>/vX.Y.Z --install-dir /usr/local/bin
+ --version <app name>/vX.Y.Z --install-dir /usr/local/bin
 ```
 
 To uninstall, add:
