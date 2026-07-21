@@ -1,8 +1,8 @@
 <div align="center">
+    <h1>PineSeed public app releases<h1>
     <img src="https://avatars.githubusercontent.com/u/135665908" width="50px" />
 </div>
 
-# PineSeed public app release repo
 
 > [!WARNING]
 > **Pre-Alpha Developer Preview** — This software is under active development and may be unstable, incomplete, or subject to breaking changes at any time. It is not intended for production use.
