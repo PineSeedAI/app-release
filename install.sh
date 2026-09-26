@@ -8,6 +8,7 @@
 #
 #   <prefix>            Tag prefix / release namespace:
 #                       agency, acp, edge, hypus, login, desktop
+#                       Append -dev for the dev release (e.g. acp-dev).
 #
 # Flags:
 #   --uninstall         Uninstall instead of install.
@@ -26,7 +27,8 @@
 #             Windows     → ~/AppData/Local/Programs/PineSeed
 #
 # GUI prefixes: login, desktop
-# Binary prefixes: agency, acp, edge, hypus
+# Binary prefixes: agency, acp, edge, hypus, hypus-app, hook-tui
+# Script prefixes: hook-tui
 set -euo pipefail
 
 # ── Constants ─────────────────────────────────────────────────────────────────
@@ -128,14 +130,16 @@ fi
 
 # ── Derive script name ────────────────────────────────────────────────────────
 ACTION="$([ "$UNINSTALL" -eq 1 ] && echo "uninstall" || echo "install")"
-case "$PREFIX" in
-  agency)  SCRIPT_NAME="harness-${ACTION}.sh" ;;
-  acp)     SCRIPT_NAME="acp-agent-${ACTION}.sh" ;;
-  edge)    SCRIPT_NAME="edge-server-${ACTION}.sh" ;;
-  hypus)   SCRIPT_NAME="hypus-mantle-${ACTION}.sh" ;;
-  login)   SCRIPT_NAME="login-${ACTION}.sh" ;;
-  desktop) SCRIPT_NAME="desktop-${ACTION}.sh" ;;
-  *)       _die "unknown prefix: ${PREFIX}" ;;
+case "${PREFIX%-dev}" in
+  agency)    SCRIPT_NAME="harness-${ACTION}.sh" ;;
+  acp)       SCRIPT_NAME="acp-agent-${ACTION}.sh" ;;
+  edge)      SCRIPT_NAME="edge-server-${ACTION}.sh" ;;
+  hypus)     SCRIPT_NAME="hypus-mantle-${ACTION}.sh" ;;
+  hypus-app) SCRIPT_NAME="hypus-app-${ACTION}.sh" ;;
+  login)     SCRIPT_NAME="login-${ACTION}.sh" ;;
+  desktop)   SCRIPT_NAME="desktop-${ACTION}.sh" ;;
+  hook-tui)  SCRIPT_NAME="hook-tui-${ACTION}.sh" ;;
+  *)         _die "unknown prefix: ${PREFIX}" ;;
 esac
 
 SCRIPT_URL="https://github.com/${RELEASE_REPO}/releases/download/${RELEASE_TAG}/${SCRIPT_NAME}"
